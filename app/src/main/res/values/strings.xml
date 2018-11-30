@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">AdastraFaceApp</string>
+
+    <!--Content descriptions-->
+    <string name="avatar">Avatar</string>
+    <string name="avatar_background">Avatar background</string>
+    <string name="icon_pin">Location</string>
+    <string name="icon_time">When joined</string>
+    <string name="icon_email">Email</string>
+    <string name="icon_department">Department</string>
+    <string name="icon_seniority">Seniority</string>
+    <string name="icon_password">Password</string>
+
+    <!--Profile-->
+    <string name="general_information">General information</string>
+
+    <!--Login/Register-->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirmPassword">Confirm password</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="register">Register</string>
+    <string name="registerDescription">Don\'t have an account? Sign up!</string>
+    <string name="name">Name</string>
+    <string name="position">Position:</string>
+    <string name="department">Department:</string>
+    <string name="seniority">Seniority:</string>
+    <string name="office">Office:</string>
+    <string name="room">Room</string>
+    <string name="whenJoinedCompany">When joined company</string>
+    <string-array name="departments">
+        <item>Consultants</item>
+        <item>DQ</item>
+        <item>Administration/back office</item>
+        <item>DI</item>
+        <item>Finance</item>
+        <item>BI</item>
+        <item>Managed Services (ABG)</item>
+        <item>Adastra.one (ABG)</item>
+        <item>Data Management (ABG)</item>
+        <item>QA</item>
+        <item>Management/Sales</item>
+    </string-array>
+    <string-array name="positions">
+        <item>Programmer Software Applications</item>
+        <item>Specialist Data Processing</item>
+        <item>Programmer</item>
+        <item>Office assistant</item>
+        <item>Finance Manager</item>
+        <item>Application support specialist</item>
+        <item>Consultant</item>
+        <item>Business Consultant of Information Technologies</item>
+        <item>Recruiter</item>
+        <item>Foreign Language Teacher</item>
+        <item>System administrator</item>
+        <item>HR Assistant</item>
+        <item>CEO</item>
+        <item>Application Administrator</item>
+        <item>Intern</item>
+        <item>Accountant</item>
+        <item>Line Manager</item>
+        <item>HR Manager</item>
+        <item>VP Business Development</item>
+    </string-array>
+    <string-array name="seniorities">
+        <item>Intern</item>
+        <item>Junior</item>
+        <item>Middle</item>
+        <item>Senior</item>
+        <item>Manager</item>
+    </string-array>
+    <string-array name="officesLocations">
+        <item>Sofia</item>
+        <item>Varna</item>
+        <item>Plovdiv</item>
+    </string-array>
+
+    <!--Edit-->
+    <string name="update">Update</string>
+
+    <!--Others-->
+    <string name="myProfile">My profile</string>
+    <string name="chooseImagePickOption">Choose an image from: </string>
+
+    <!--Errors-->
+    <string name="noInternetConnection">No Internet connection</string>
+    <string name="unknownError">Unknown error received</string>
+    <string name="emailLengthShouldBeBetween">Email length should be between %d and %d characters</string>
+    <string name="emailNotValid">Entered email is not valid</string>
+    <string name="passwordLengthShouldBeBetween">Password length should be between %d and %d characters</string>
+    <string name="passwordsDoNotMatch">Entered passwords do not match</string>
+    <string name="nameLengthShouldBeBetween">Name length should be between %d and %d characters</string>
+    <string name="invalidRoomFormat">Entered room value has invalid format</string>
+    <string name="youHaveToSelectStartingDate">You have to select starting date</string>
+</resources>

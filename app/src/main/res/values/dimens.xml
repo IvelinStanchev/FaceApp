@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="avatar_profile_size">180dp</dimen>
+    <dimen name="icons_profile_information">30dp</dimen>
+</resources>

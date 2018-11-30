@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "204455443315",
+    "firebase_url": "https://adastra-face-app.firebaseio.com",
+    "project_id": "adastra-face-app",
+    "storage_bucket": "adastra-face-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204455443315:android:90508d92ff28b8f5",
+        "android_client_info": {
+          "package_name": "bg.adastragrp.adastrafaceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "204455443315-kh18mqlhle434ub85871pkjfevp0rbbv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4oKiJxOyCnJhVf01IESfr3yp0zfMhgXU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
