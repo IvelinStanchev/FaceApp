@@ -7,6 +7,9 @@ import bg.adastragrp.adastrafaceapp.fragments.ListUsersFragment;
 import bg.adastragrp.adastrafaceapp.fragments.LoginFragment;
 import bg.adastragrp.adastrafaceapp.view_models.MainActivityViewModel;
 
+/**
+ * Used for a main container for all fragments
+ */
 public class MainActivity extends BaseActivity<MainActivityViewModel> {
 
     @Override
@@ -37,8 +40,10 @@ public class MainActivity extends BaseActivity<MainActivityViewModel> {
 
     private void init() {
         if (viewModel.getIsLoggedIn()) {
+            // go to list users
             replaceFragmentWithoutBackStack(ListUsersFragment.newInstance());
         } else {
+            // go to login
             replaceFragmentWithoutBackStack(LoginFragment.newInstance());
         }
     }

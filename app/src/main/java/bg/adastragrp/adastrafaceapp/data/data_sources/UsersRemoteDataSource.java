@@ -28,6 +28,9 @@ import bg.adastragrp.adastrafaceapp.data.models.User;
 import io.reactivex.Completable;
 import io.reactivex.Single;
 
+/**
+ * Responsible for getting and setting users data from/to remove data source (Firebase)
+ */
 @Singleton
 public class UsersRemoteDataSource {
 

@@ -5,6 +5,9 @@ import android.arch.persistence.room.RoomDatabase;
 
 import bg.adastragrp.adastrafaceapp.data.models.User;
 
+/**
+ * Main database for the app
+ */
 @Database(entities = {User.class}, version = 1)
 public abstract class AppDatabase extends RoomDatabase {
 

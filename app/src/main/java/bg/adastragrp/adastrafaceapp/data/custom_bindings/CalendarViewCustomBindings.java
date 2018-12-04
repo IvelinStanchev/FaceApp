@@ -3,6 +3,9 @@ package bg.adastragrp.adastrafaceapp.data.custom_bindings;
 import android.databinding.BindingAdapter;
 import android.widget.CalendarView;
 
+/**
+ * XML data bindings setters for CalendarView
+ */
 public class CalendarViewCustomBindings {
 
     @BindingAdapter("android:onDateChanged")

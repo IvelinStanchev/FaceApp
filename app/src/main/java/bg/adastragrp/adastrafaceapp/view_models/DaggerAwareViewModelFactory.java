@@ -9,6 +9,9 @@ import javax.inject.Inject;
 import javax.inject.Provider;
 import javax.inject.Singleton;
 
+/**
+ * Factory for creating ViewModels and the map containing pairs of ViewModelClass and ViewModelInstance
+ */
 @Singleton
 public class DaggerAwareViewModelFactory extends ViewModelProvider.NewInstanceFactory {
 

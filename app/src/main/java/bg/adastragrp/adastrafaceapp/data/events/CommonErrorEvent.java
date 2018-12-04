@@ -4,6 +4,9 @@ import android.content.res.Resources;
 
 import bg.adastragrp.adastrafaceapp.constants.enums.ErrorEvent;
 
+/**
+ * Contains information about error happened throughout the app
+ */
 public class CommonErrorEvent implements ErrorEvent {
 
     private String message;

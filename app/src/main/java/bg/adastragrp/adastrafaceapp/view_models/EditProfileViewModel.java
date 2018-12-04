@@ -26,8 +26,8 @@ import io.reactivex.schedulers.Schedulers;
 public class EditProfileViewModel extends RegisterViewModel {
 
     private LiveData<User> user;
-    private MutableLiveData<Boolean> successfullyUpdated = new MutableLiveData<>();
-    private boolean isRefreshed;
+    private MutableLiveData<Boolean> successfullyUpdated = new MutableLiveData<>(); // notifies the observer (view) when profile data is updated
+    private boolean isRefreshed; // flag for refresh only once indication
 
     public @Inject EditProfileViewModel(@NonNull MainApplication application, UserRepository userRepository) {
         super(application, userRepository);

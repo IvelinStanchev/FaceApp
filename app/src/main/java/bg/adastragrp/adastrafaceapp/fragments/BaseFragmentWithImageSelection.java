@@ -21,6 +21,12 @@ import java.util.List;
 
 import static android.app.Activity.RESULT_OK;
 
+/**
+ * Base fragment for all other fragments which contain selection and cropping of image. Implements most of the repeating code
+ *
+ * @param <VDB> Generated binding for the child fragment layout
+ * @param <VM> ViewModel of the child fragment
+ */
 public abstract class BaseFragmentWithImageSelection<VDB extends ViewDataBinding, VM extends ViewModel>
         extends BaseFragment<VDB, VM> {
 

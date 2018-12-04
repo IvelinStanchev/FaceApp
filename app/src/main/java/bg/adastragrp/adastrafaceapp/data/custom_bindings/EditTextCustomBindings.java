@@ -5,6 +5,9 @@ import android.support.design.widget.TextInputLayout;
 
 import bg.adastragrp.adastrafaceapp.constants.enums.ErrorEvent;
 
+/**
+ * XML data bindings setters for EditText
+ */
 public class EditTextCustomBindings {
 
     @BindingAdapter("app:errorText")

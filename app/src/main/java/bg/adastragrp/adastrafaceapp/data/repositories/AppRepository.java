@@ -6,6 +6,9 @@ import javax.inject.Singleton;
 import bg.adastragrp.adastrafaceapp.MainApplication;
 import bg.adastragrp.adastrafaceapp.utils.FirebaseUtils;
 
+/**
+ * Responsible for common application functions like check if user is logged in
+ */
 @Singleton
 public class AppRepository {
 

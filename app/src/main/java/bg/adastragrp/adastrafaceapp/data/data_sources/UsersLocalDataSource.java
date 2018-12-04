@@ -13,6 +13,9 @@ import bg.adastragrp.adastrafaceapp.database.AppDatabase;
 import bg.adastragrp.adastrafaceapp.database.UserDao;
 import io.reactivex.Single;
 
+/**
+ * Responsible for getting and setting users data from/to local data source (local DB)
+ */
 @Singleton
 public class UsersLocalDataSource {
 

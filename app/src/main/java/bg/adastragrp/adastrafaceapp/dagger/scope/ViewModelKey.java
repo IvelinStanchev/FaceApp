@@ -9,6 +9,9 @@ import java.lang.annotation.Target;
 
 import dagger.MapKey;
 
+/**
+ * Creates a Key (ViewModel class) to be associated with its built ViewModel instance (using IntoMap)
+ */
 @Target({ ElementType.METHOD })
 @Retention(RetentionPolicy.RUNTIME)
 @MapKey

@@ -8,6 +8,10 @@ import bg.adastragrp.adastrafaceapp.fragments.RegisterFragment;
 import dagger.Module;
 import dagger.android.ContributesAndroidInjector;
 
+/**
+ * Module for contribution of fragments
+ * (Tells to the dependency builder that corresponding fragment should be injected/has to inject variables)
+ */
 @Module
 public abstract class FragmentsBuildersModule {
 

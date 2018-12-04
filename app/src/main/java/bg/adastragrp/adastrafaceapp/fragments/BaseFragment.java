@@ -20,11 +20,17 @@ import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import dagger.android.support.AndroidSupportInjection;
 
+/**
+ * Base fragment for all other fragments. Implements most of the repeating code
+ *
+ * @param <VDB> Generated binding for the child fragment layout
+ * @param <VM> ViewModel of the child fragment
+ */
 public abstract class BaseFragment<VDB extends ViewDataBinding, VM extends ViewModel> extends Fragment {
 
-    private Unbinder unbinder;
+    private Unbinder unbinder; // will unbind all views when its method unbind is called
     @Inject
-    ViewModelProvider.Factory viewModelFactory;
+    ViewModelProvider.Factory viewModelFactory; // factory for creating/fetching ViewModels
     protected VM viewModel;
     protected VDB binding;
 
@@ -35,11 +41,11 @@ public abstract class BaseFragment<VDB extends ViewDataBinding, VM extends ViewM
 
         Class<VM> viewModelClass = getViewModelClass();
         if (viewModelClass != null) {
-            viewModel = ViewModelProviders.of(this, viewModelFactory).get(viewModelClass);
+            viewModel = ViewModelProviders.of(this, viewModelFactory).get(viewModelClass); // gets the already created ViewModel
         }
 
-        binding = DataBindingUtil.inflate(inflater, getLayoutId(), container, false);
-        View view = binding.getRoot();
+        binding = DataBindingUtil.inflate(inflater, getLayoutId(), container, false); // newly-created binding for the inflated layout or null if the layoutId wasn't for a binding layout
+        View view = binding.getRoot(); // gets the outermost View in the layout file associated with the Binding
         unbinder = ButterKnife.bind(this, view);
         return view;
     }

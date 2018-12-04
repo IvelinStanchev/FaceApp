@@ -12,8 +12,19 @@ import com.bumptech.glide.request.RequestOptions;
 
 import bg.adastragrp.adastrafaceapp.utils.AppUtils;
 
+/**
+ * XML data bindings setters for ImageView
+ */
 public class ImageViewCustomBindings {
 
+    /**
+     * Loads provided image URL to ImageView
+     *
+     * @param imageView view receiver
+     * @param url image URL
+     * @param placeholderImage placeholder while image is loading
+     * @param errorImage callback image for error state response
+     */
     @BindingAdapter(value = { "android:src", "placeholderImage", "errorImage" }, requireAll = false)
     public static void setImageUrl(ImageView imageView, String url, Drawable placeholderImage, Drawable errorImage) {
         if (TextUtils.isEmpty(url)) {

@@ -5,6 +5,9 @@ import android.content.res.Resources;
 import bg.adastragrp.adastrafaceapp.R;
 import bg.adastragrp.adastrafaceapp.constants.Constants;
 
+/**
+ * Contains enums for each error connected with fields validation
+ */
 public enum FieldsValidationErrors implements ErrorEvent {
 
     EMAIL_LENGTH(R.string.emailLengthShouldBeBetween, Constants.EMAIL_MIN_LENGTH, Constants.EMAIL_MAX_LENGTH),

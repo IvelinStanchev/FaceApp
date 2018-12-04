@@ -11,6 +11,9 @@ import dagger.Component;
 import dagger.android.AndroidInjector;
 import dagger.android.support.AndroidSupportInjectionModule;
 
+/**
+ * The wiring component for building the dependency graph
+ */
 @Singleton
 @Component(
         modules = {

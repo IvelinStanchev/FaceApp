@@ -8,6 +8,7 @@ public class MainApplication extends DaggerApplication {
 
     @Override
     protected AndroidInjector<? extends DaggerApplication> applicationInjector() {
+        // builds the dependency graph
         return DaggerAppComponent.builder().create(this);
     }
 }

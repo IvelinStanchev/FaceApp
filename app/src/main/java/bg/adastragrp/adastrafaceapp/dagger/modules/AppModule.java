@@ -11,6 +11,9 @@ import dagger.Module;
 import dagger.Provides;
 import io.reactivex.disposables.CompositeDisposable;
 
+/**
+ * General module for providing of dependencies
+ */
 @Module
 public class AppModule {
 

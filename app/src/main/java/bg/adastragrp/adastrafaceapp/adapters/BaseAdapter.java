@@ -12,6 +12,11 @@ import java.util.List;
 
 import bg.adastragrp.adastrafaceapp.BR;
 
+/**
+ * Base class for all recycler adapters
+ *
+ * @param <T> Object source for each row
+ */
 public abstract class BaseAdapter<T> extends RecyclerView.Adapter<BaseAdapter.BaseViewHolder> {
 
     private List<T> data;
@@ -26,6 +31,9 @@ public abstract class BaseAdapter<T> extends RecyclerView.Adapter<BaseAdapter.Ba
             this.binding = binding;
         }
 
+        /**
+         * Binds data source to view
+         */
         <E> void bind(E item) {
             // Note: if child adapter extends this BaseAdapter then its layout should use data variable with name "item"
             binding.setVariable(BR.item, item);
@@ -45,6 +53,7 @@ public abstract class BaseAdapter<T> extends RecyclerView.Adapter<BaseAdapter.Ba
     @Override
     public BaseViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
+        // Inflates a binding layout and returns the newly-created binding for that layout.
         ViewDataBinding binding = DataBindingUtil.inflate(
                 layoutInflater,
                 getLayoutIdForType(viewType),
@@ -97,5 +106,6 @@ public abstract class BaseAdapter<T> extends RecyclerView.Adapter<BaseAdapter.Ba
         return this.clickListener;
     }
 
+    // get recycler item layout
     protected abstract int getLayoutIdForType(int viewType);
 }

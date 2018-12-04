@@ -8,6 +8,9 @@ import javax.inject.Inject;
 import bg.adastragrp.adastrafaceapp.MainApplication;
 import io.reactivex.disposables.CompositeDisposable;
 
+/**
+ * Base ViewModel for all other ViewModels. Implements most of the repeating code
+ */
 public class BaseViewModel extends AndroidViewModel {
 
     @Inject

@@ -9,6 +9,9 @@ import android.widget.AdapterView;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 
+/**
+ * XML data bindings setters and getters for Spinners
+ */
 public class SpinnerCustomBindings {
 
     @InverseBindingAdapter(attribute = "app:selectedItem")

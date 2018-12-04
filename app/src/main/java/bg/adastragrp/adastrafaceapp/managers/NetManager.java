@@ -7,6 +7,9 @@ import android.net.NetworkInfo;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
+/**
+ * Contains methods for checking device Internet status
+ */
 @Singleton
 public class NetManager {
 

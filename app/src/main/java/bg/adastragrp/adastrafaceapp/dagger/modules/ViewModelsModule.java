@@ -15,6 +15,9 @@ import dagger.Binds;
 import dagger.Module;
 import dagger.multibindings.IntoMap;
 
+/**
+ * Module for representing binding between ViewModelClass and ViewModelInstance
+ */
 @Module
 public abstract class ViewModelsModule {
 

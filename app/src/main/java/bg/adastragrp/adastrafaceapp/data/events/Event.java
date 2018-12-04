@@ -1,5 +1,10 @@
 package bg.adastragrp.adastrafaceapp.data.events;
 
+/**
+ * Class for single time data consuming
+ *
+ * @param <T> Content
+ */
 public class Event<T> {
 
     private T content;
